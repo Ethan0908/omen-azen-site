@@ -1,154 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Unofficial sample website concept for Omen Azen, a sushi restaurant in Manhattan.">
-  <title>Omen Azen | Manhattan Sushi Restaurant</title>
-  <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header" data-header>
-    <a class="brand" href="#home" aria-label="Omen Azen home">
-      <span class="brand-mark">OA</span>
-      <span>
-        <span class="brand-name">Omen Azen</span>
-        <span class="brand-subtitle">Manhattan sushi</span>
-      </span>
-    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Unofficial sample website concept for Omen Azen, a sushi restaurant in Manhattan."
+    />
+    <title>Omen Azen | Manhattan Sushi Restaurant</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Omen Azen home">
+        <span class="brand-mark" aria-hidden="true">OA</span>
+        <span>
+          <strong>Omen Azen</strong>
+          <small>Manhattan Sushi</small>
+        </span>
+      </a>
 
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
 
-    <nav class="site-nav" data-nav>
-      <a href="#menu">Menu</a>
-      <a href="#why">Why Us</a>
-      <a href="#area">Area</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#area">Area</a>
+        <a class="nav-call" href="tel:+12129258923">Call</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-media" aria-hidden="true"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Sushi restaurant in Manhattan</p>
-        <h1>Omen Azen</h1>
-        <p class="hero-copy">
-          A calm, modern concept for a Japanese dining destination centered on pristine sushi,
-          warm hospitality, and an intimate Manhattan evening out.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="tel:2129258923">Call 212-925-8923</a>
-          <a class="button secondary" href="#menu">View Highlights</a>
-        </div>
-      </div>
-      <div class="hero-card" aria-label="Restaurant details">
-        <span>Manhattan, NY</span>
-        <strong>Fresh sushi, sake, and Japanese plates</strong>
-      </div>
-    </section>
-
-    <section class="section menu-section" id="menu">
-      <div class="section-heading">
-        <p class="eyebrow">Menu highlights</p>
-        <h2>Built for a refined sushi night</h2>
-        <p>
-          Focused selections give guests a clear path from first bite to final pour.
-        </p>
-      </div>
-
-      <div class="menu-grid">
-        <article class="menu-item">
-          <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=900&q=80" alt="Assorted nigiri arranged on a black plate">
-          <div>
-            <h3>Nigiri Selection</h3>
-            <p>Seasonal fish prepared simply, with clean rice, balanced wasabi, and restrained finishing touches.</p>
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Unofficial concept for a Manhattan favorite</p>
+          <h1 id="hero-title">Omen Azen</h1>
+          <p class="hero-copy">
+            A refined one-page presence for a sushi restaurant rooted in intimate service,
+            composed plates, and a calm downtown dining room.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="tel:+12129258923">Call 212-925-8923</a>
+            <a class="button secondary" href="#menu">View Highlights</a>
           </div>
-        </article>
-        <article class="menu-item">
-          <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=900&q=80" alt="Fresh sushi rolls with chopsticks">
-          <div>
-            <h3>Signature Rolls</h3>
-            <p>Polished rolls designed for texture, brightness, and generous flavor without overwhelming the fish.</p>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <p class="eyebrow">Menu highlights</p>
+          <h2 id="menu-title">Sushi, sashimi, and quietly elegant Japanese plates.</h2>
+        </div>
+
+        <div class="highlight-grid">
+          <article class="highlight-card">
+            <img
+              src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=900&q=80"
+              alt="Assorted nigiri arranged on a dark plate"
+            />
+            <div>
+              <h3>Nigiri Selection</h3>
+              <p>Seasonal cuts, clean rice, and precise garnishes presented with restraint.</p>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img
+              src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80"
+              alt="Fresh sushi rolls with chopsticks"
+            />
+            <div>
+              <h3>Rolls & Small Plates</h3>
+              <p>Balanced textures and classic flavors for a relaxed shared-table dinner.</p>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img
+              src="https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=900&q=80"
+              alt="Sashimi and Japanese dishes served at a restaurant table"
+            />
+            <div>
+              <h3>Chef-Led Combinations</h3>
+              <p>Curated courses that move from delicate seafood to richer, savory finishes.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="experience" aria-labelledby="why-title">
+        <div class="split-image" aria-hidden="true"></div>
+        <div class="split-content">
+          <p class="eyebrow">Why choose us</p>
+          <h2 id="why-title">A polished dining experience without losing the neighborhood feel.</h2>
+          <div class="reason-list">
+            <div class="reason">
+              <span>01</span>
+              <div>
+                <h3>Focused Craft</h3>
+                <p>Every detail supports the food: clean presentation, composed pacing, and attentive service.</p>
+              </div>
+            </div>
+            <div class="reason">
+              <span>02</span>
+              <div>
+                <h3>Downtown Setting</h3>
+                <p>Convenient for dinner plans, client meals, and low-key celebrations in Manhattan.</p>
+              </div>
+            </div>
+            <div class="reason">
+              <span>03</span>
+              <div>
+                <h3>Quiet Confidence</h3>
+                <p>A modern digital presence that feels refined, direct, and reservation-ready.</p>
+              </div>
+            </div>
           </div>
-        </article>
-        <article class="menu-item">
-          <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=900&q=80" alt="Japanese sashimi and garnishes on ceramic tableware">
-          <div>
-            <h3>Sashimi & Small Plates</h3>
-            <p>Shareable cold and warm plates for pairing with sake, tea, or a relaxed multi-course dinner.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section split-section" id="why">
-      <div class="feature-copy">
-        <p class="eyebrow">Why choose us</p>
-        <h2>A polished room for focused Japanese dining</h2>
-        <p>
-          This concept positions Omen Azen as a composed, reservation-worthy Manhattan restaurant:
-          easy to understand, quick to contact, and centered on the quality cues sushi guests look for.
-        </p>
-      </div>
-      <div class="reasons">
-        <div class="reason">
-          <span>01</span>
-          <h3>Ingredient-led</h3>
-          <p>Messaging emphasizes freshness, seasonality, and care at the counter.</p>
         </div>
-        <div class="reason">
-          <span>02</span>
-          <h3>Calm and premium</h3>
-          <p>Restrained typography, photography, and spacing create a quiet upscale impression.</p>
+      </section>
+
+      <section class="section area-section" id="area" aria-labelledby="area-title">
+        <div class="area-copy">
+          <p class="eyebrow">Service area</p>
+          <h2 id="area-title">Serving Manhattan diners from a downtown base.</h2>
+          <p>
+            Built for guests searching for sushi in Manhattan, SoHo, Tribeca, Greenwich Village,
+            NoHo, and nearby downtown neighborhoods.
+          </p>
         </div>
-        <div class="reason">
-          <span>03</span>
-          <h3>Easy to act</h3>
-          <p>Phone contact and location details stay visible across desktop and mobile screens.</p>
+        <div class="area-panel" aria-label="Service area details">
+          <span>Manhattan</span>
+          <strong>Downtown dining, private dinners, and evening reservations.</strong>
+          <p>Call the restaurant directly for current availability and dining details.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="service-area" id="area">
-      <div class="area-content">
-        <p class="eyebrow">Service area</p>
-        <h2>Serving Manhattan diners</h2>
-        <p>
-          Located for guests planning sushi dinners, date nights, business meals, and private evenings throughout Manhattan.
-        </p>
-      </div>
-      <div class="area-panel">
-        <span>Primary city</span>
-        <strong>Manhattan</strong>
-        <p>Japanese dining concept with direct phone contact for reservations and questions.</p>
-      </div>
-    </section>
+      <section class="cta-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Plan your next sushi dinner.</h2>
+          <p>Speak with Omen Azen by phone for current hours, reservations, and dining questions.</p>
+        </div>
+        <a class="button primary" href="tel:+12129258923">Call 212-925-8923</a>
+      </section>
+    </main>
 
-    <section class="contact-cta" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Plan a sushi night at Omen Azen</h2>
-        <p>Call the restaurant directly or visit the current website for existing business information.</p>
-      </div>
-      <div class="cta-actions">
-        <a class="button primary dark" href="tel:2129258923">212-925-8923</a>
-        <a class="button secondary dark" href="https://www.omen-azen.com/" rel="noopener noreferrer">Current Website</a>
-      </div>
-    </section>
-  </main>
+    <footer class="site-footer">
+      <p>Unofficial sample website concept.</p>
+      <a href="#home">Back to top</a>
+    </footer>
 
-  <footer class="site-footer">
-    <p>Unofficial sample website concept.</p>
-    <a href="#home">Back to top</a>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
